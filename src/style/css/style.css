@@ -1,0 +1,55 @@
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+#header .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#header .content .welcome {
+  margin: 50px 15%;
+}
+
+#about .content .title {
+  display: flex;
+  justify-content: center;
+}
+#about .content .description {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+#about .content .description .profil-pic {
+  display: block;
+  height: 400px;
+  width: auto;
+}
+#about .content .description .profil-pic img {
+  height: 400px;
+  width: auto;
+}
+
+#display-projects .content {
+  display: flex;
+  flex-direction: column;
+}
+#display-projects .content .title {
+  display: flex;
+  justify-content: center;
+}
+#display-projects .content .display-projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+#display-projects .content .display-projects .project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#display-projects .content .display-projects .thumbnail-project img {
+  height: 300px;
+  width: auto;
+}
+
+/*# sourceMappingURL=style.css.map */

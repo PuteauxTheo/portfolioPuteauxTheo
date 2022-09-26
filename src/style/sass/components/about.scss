@@ -1,0 +1,25 @@
+#about {
+    .content {
+        .title {
+            display: flex;
+            justify-content: center;
+        }
+
+        .description {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            .profil-pic {
+
+                display: block;
+                height: 400px;
+                width: auto;
+
+                img {
+                    height: 400px;
+                    width: auto;
+                }
+            }
+        }
+    }
+}
