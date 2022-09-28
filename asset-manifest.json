@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/portfolioPuteauxTheo/static/css/main.3039662e.css",
+    "main.js": "/portfolioPuteauxTheo/static/js/main.871d1484.js",
+    "static/media/me.jpg": "/portfolioPuteauxTheo/static/media/me.0c81f040267061434a99.jpg",
+    "static/media/test.jpg": "/portfolioPuteauxTheo/static/media/test.3fdc809be5e17c384ff2.jpg",
+    "static/media/booki.jpg": "/portfolioPuteauxTheo/static/media/booki.4af6054e0c67b3bbcb6c.jpg",
+    "static/media/kasa.jpg": "/portfolioPuteauxTheo/static/media/kasa.eead4948fad28b0ef48b.jpg",
+    "static/media/argentbank.jpg": "/portfolioPuteauxTheo/static/media/argentbank.04454867c59f544b6eba.jpg",
+    "static/media/ohmyfood.jpg": "/portfolioPuteauxTheo/static/media/ohmyfood.820a41dece9e629289ee.jpg",
+    "static/media/gameon.jpg": "/portfolioPuteauxTheo/static/media/gameon.dbdbe274cb59123d5330.jpg",
+    "static/media/fisheye.jpg": "/portfolioPuteauxTheo/static/media/fisheye.beab2c7d8992e792d597.jpg",
+    "static/media/sportsee.jpg": "/portfolioPuteauxTheo/static/media/sportsee.a5bc55053885d1faffab.jpg",
+    "static/media/hrnet.jpg": "/portfolioPuteauxTheo/static/media/hrnet.7473143d78fdf586c6ab.jpg",
+    "static/media/lespetitsplats.jpg": "/portfolioPuteauxTheo/static/media/lespetitsplats.220645917e40e625621c.jpg",
+    "static/media/billed.jpg": "/portfolioPuteauxTheo/static/media/billed.51c04535cd777b2ca498.jpg",
+    "index.html": "/portfolioPuteauxTheo/index.html",
+    "main.3039662e.css.map": "/portfolioPuteauxTheo/static/css/main.3039662e.css.map",
+    "main.871d1484.js.map": "/portfolioPuteauxTheo/static/js/main.871d1484.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3039662e.css",
+    "static/js/main.871d1484.js"
+  ]
+}
