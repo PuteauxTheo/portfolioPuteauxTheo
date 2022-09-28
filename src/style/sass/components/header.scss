@@ -1,11 +1,15 @@
 #header {
+    background-color: #FDEEDC;
     .content {
         display: flex;
         flex-direction: column;
         align-items: center;
 
         .welcome {
-            margin: 50px 15%;
+            margin: 50px 15%;            
+        }
+        .want-more{
+            padding: 25px;
         }
     }
 }

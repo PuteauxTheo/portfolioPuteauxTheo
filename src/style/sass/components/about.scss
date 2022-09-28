@@ -1,23 +1,33 @@
 #about {
+    background-color: #F1A661;
     .content {
         .title {
             display: flex;
             justify-content: center;
+            padding: 25px;
+            margin: 0;
         }
 
-        .description {
+        .aboutme{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-
+            padding-bottom: 30px;
+            .presentation{
+                text-align: right;
+            }
             .profil-pic {
-
-                display: block;
-                height: 400px;
+                display: flex;
+                justify-content: center;
+                height: 300px;
                 width: auto;
-
-                img {
-                    height: 400px;
-                    width: auto;
+                .img{
+                    display: flex;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    img {
+                        height: 100%;
+                        width: auto;
+                    }
                 }
             }
         }
