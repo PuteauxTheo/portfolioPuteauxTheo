@@ -1,15 +1,12 @@
-import me from '../assets/me.JPG'
+import me from '../assets/me.jpg'
 
 export default function About() {
     return (
         <div id="about" className="container">
             <div className='content'>
                 <h2 className="title">About me</h2>
-                <div className="description">
-                    <span className='profil-pic'>
-                        <img src={me} alt="" />
-                    </span>
-                    <div>
+                <div className="aboutme">
+                    <div className='presentation'>
                         <p>Prenom : Theo</p>
                         <p>Nom : Puteaux</p>
                         <p>Date de naissance : 18 juin 2000</p>
@@ -19,7 +16,12 @@ export default function About() {
                         </p>
                         <p>Techno utilise</p>
                         <div>Contactez moi ( linkedin, twitter, gitHub )</div>
-                    </div>                    
+                    </div>  
+                    <div className='profil-pic'>
+                        <span className='img'>
+                            <img src={me} alt="" />
+                        </span>
+                    </div>          
                 </div>
             </div>
         </div>

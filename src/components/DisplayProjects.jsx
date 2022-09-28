@@ -17,35 +17,39 @@ export default function DisplayProject() {
 
                 {projectsData.map((project) => {
                     return (
-                        <div key={project.id+"project"} className="display-projects">
+                        <div key={project.id + "project"} className="display-projects">
                             <div className="project">
                                 <h3 className="project-title">{project.title}</h3>
-                                <span className="project-description">
-                                    <h4>{project.mission}</h4>
-                                    {
-                                        project.info.map((info, index) => {
-                                            return (
-                                                <p key={info+' '+index}>{info}</p>
-                                            )
-                                        })
-                                    }
-                                    <div>
-                                        {joinText(project.language)}
+                                <div className='thumbnail-project'>
+                                    <div className='img'>
+                                        <img src={require('../assets/project/' + project.img)} alt="" />
                                     </div>
-                                    
+                                </div>
+                            </div>
+                            <span className="project-description">
+                                <h4>{project.mission}</h4>
+                                {
+                                    project.info.map((info, index) => {
+                                        return (
+                                            <li key={info + ' ' + index}>- {info}</li>
+                                        )
+                                    })
+                                }
+                                <div className='language'>
+                                    {joinText(project.language)}
+                                </div>
 
+                                <div className='project-button'>
                                     <a href={project.repo}>
                                         <button>Voir le code</button>
                                     </a>
                                     <a href={project.url}>
                                         <button>Acceder au site</button>
                                     </a>
+                                </div>
 
-                                </span>
-                            </div>
-                            <div className='thumbnail-project'>
-                                <img src={require('../assets/project/'+project.img)} alt="" />
-                            </div>
+                            </span>
+
                         </div>
                     )
                 })
