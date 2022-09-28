@@ -103,15 +103,3 @@ export const projectsData = [
     repo: 'https://github.com/PuteauxTheo/PuteauxTheo_14_28082022',
   },
 ];
-
-export const aboutme = [
-  {
-    firstName: "Theo",
-    lastName: "Puteaux",
-    dateOfBirth: "18 juin 2000",
-    placeOfBirth: "Mantes La Jolie",
-    presentation: 'J\'ai toujours aime les nouvelles technologies, la science. Je suis quelqu\'un de tres serieux qui aime les choses bien faites et optimiser. J\'aime bien pratiquer pas mal de sport mais principalement du Jiu-jitsu brésilien en compétition et des echecs a mes heures perdus.',
-    languageUsed: ['HTML', 'CSS','SCSS', 'ReactJS', 'Redux',"Git"],
-    urlContact :[ "linkedinLien", "twitter", "gitHub"]
-  },
-]
