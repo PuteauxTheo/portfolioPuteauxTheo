@@ -1,10 +1,13 @@
 #about {
-    background-color: #F1A661;
+    color: #DBE2EF;
+
+    background-color: #112D4E;
     .content {
         .title {
             display: flex;
             justify-content: center;
-            padding: 25px;
+            padding: 30px;
+            font-size: 36px;
             margin: 0;
         }
 
@@ -12,21 +15,46 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             padding-bottom: 30px;
-            .presentation{
-                text-align: right;
+            .description{
+                
+                .identity{
+                    text-align: right;
+                    line-height: 30px;
+                }
+                .presentation{
+                    text-align: center;
+                }
+                .language-used{
+                    text-align: right;
+                    margin: 30px;
+                }
+
+                
+
             }
             .profil-pic {
                 display: flex;
                 justify-content: center;
-                height: 300px;
-                width: auto;
+                flex-direction: column;
                 .img{
                     display: flex;
-                    border-radius: 5px;
                     overflow: hidden;
+                    height: 300px;
+                    margin-left: 100px;
                     img {
+                        clip-path: circle(40%);
                         height: 100%;
                         width: auto;
+                    }
+                }
+                .contact-me{
+                    text-align: left;
+                    display: block;
+                    margin-left: 20px;
+                    .logo{
+                        display: flex;
+                        justify-content: left;
+                        
                     }
                 }
             }

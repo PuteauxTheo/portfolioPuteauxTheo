@@ -13,8 +13,13 @@ h4 {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 #header {
-  background-color: #FDEEDC;
+  background-color: #DBE2EF;
 }
 #header .content {
   display: flex;
@@ -22,19 +27,71 @@ h4 {
   align-items: center;
 }
 #header .content .welcome {
-  margin: 50px 15%;
+  margin: 150px 15% 75px 15%;
+  color: #112D4E;
+  font-size: 36px;
 }
-#header .content .want-more {
-  padding: 25px;
+#header .content .welcome .name {
+  color: #112D4E;
+}
+#header .content .welcome .job {
+  font-size: 24px;
+}
+#header .content .read-more {
+  padding-bottom: 150px;
+}
+#header .content button {
+  outline: none;
+}
+#header .content .btn-read-more {
+  background: #112D4E;
+  color: #112D4E;
+  z-index: 1;
+  border-radius: 5px;
+}
+#header .content .btn-read-more:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: #112D4E;
+  transition: all 0.3s ease;
+}
+#header .content .btn-read-more:hover {
+  color: #F9F7F7;
+}
+#header .content .btn-read-more:hover:after {
+  top: 0;
+  height: 100%;
+}
+#header .content .btn-read-more:active {
+  top: 2px;
+}
+#header .content .custom-btn {
+  width: auto;
+  height: 40px;
+  padding: 10px 25px;
+  border: 2px solid #112D4E;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
 }
 
 #about {
-  background-color: #F1A661;
+  color: #DBE2EF;
+  background-color: #112D4E;
 }
 #about .content .title {
   display: flex;
   justify-content: center;
-  padding: 25px;
+  padding: 30px;
+  font-size: 36px;
   margin: 0;
 }
 #about .content .aboutme {
@@ -42,27 +99,46 @@ h4 {
   grid-template-columns: repeat(2, 1fr);
   padding-bottom: 30px;
 }
-#about .content .aboutme .presentation {
+#about .content .aboutme .description .identity {
   text-align: right;
+  line-height: 30px;
+}
+#about .content .aboutme .description .presentation {
+  text-align: center;
+}
+#about .content .aboutme .description .language-used {
+  text-align: right;
+  margin: 30px;
 }
 #about .content .aboutme .profil-pic {
   display: flex;
   justify-content: center;
-  height: 300px;
-  width: auto;
+  flex-direction: column;
 }
 #about .content .aboutme .profil-pic .img {
   display: flex;
-  border-radius: 5px;
   overflow: hidden;
+  height: 300px;
+  margin-left: 100px;
 }
 #about .content .aboutme .profil-pic .img img {
+  clip-path: circle(40%);
   height: 100%;
   width: auto;
 }
+#about .content .aboutme .profil-pic .contact-me {
+  text-align: left;
+  display: block;
+  margin-left: 20px;
+}
+#about .content .aboutme .profil-pic .contact-me .logo {
+  display: flex;
+  justify-content: left;
+}
 
 #display-projects {
-  background-color: #FDEEDC;
+  background-color: #3F72AF;
+  color: #F9F7F7;
 }
 #display-projects .content {
   display: flex;
@@ -92,7 +168,7 @@ h4 {
   justify-content: center;
   height: 250px;
   width: 400px;
-  border: 2px solid black;
+  border: 2px solid #F9F7F7;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -120,8 +196,79 @@ h4 {
 #display-projects .content .display-projects .project-description .project-button {
   margin: 25px 0;
 }
-#display-projects .content .display-projects .project-description .project-button button {
+#display-projects .content .display-projects .project-description .project-button .frame .custom-btn {
+  width: auto;
+  height: 40px;
+  padding: 10px 25px;
+  border: 2px solid #112D4E;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.7s ease;
+  position: relative;
+  display: inline-block;
+}
+#display-projects .content .display-projects .project-description .project-button .frame button {
   margin: 0px 10px;
+  outline: none;
+}
+#display-projects .content .display-projects .project-description .project-button .frame .btn-site {
+  background: #112D4E;
+  color: #F9F7F7;
+  z-index: 1;
+  border-radius: 5px;
+}
+#display-projects .content .display-projects .project-description .project-button .frame .btn-site:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background: #F9F7F7;
+  transition: all 0.7s ease;
+  border-radius: 5px;
+}
+#display-projects .content .display-projects .project-description .project-button .frame .btn-site:hover {
+  color: #112D4E;
+}
+#display-projects .content .display-projects .project-description .project-button .frame .btn-site:hover:after {
+  left: 0;
+  width: 100%;
+}
+#display-projects .content .display-projects .project-description .project-button .frame .btn-site:active {
+  top: 2px;
+}
+#display-projects .content .display-projects .project-description .project-button .frame .btn-code {
+  background: #112D4E;
+  color: #F9F7F7;
+  z-index: 1;
+  border-radius: 5px;
+}
+#display-projects .content .display-projects .project-description .project-button .frame .btn-code:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  background: #e0e5ec;
+  transition: all 0.7s ease;
+  border-radius: 5px;
+}
+#display-projects .content .display-projects .project-description .project-button .frame .btn-code:hover {
+  color: #112D4E;
+}
+#display-projects .content .display-projects .project-description .project-button .frame .btn-code:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+#display-projects .content .display-projects .project-description .project-button .frame .btn-code:active {
+  top: 2px;
 }
 
 #display-projects:nth-child(even) {

@@ -1,71 +1,166 @@
-#display-projects{
-    background-color: #FDEEDC;
+#display-projects {
+    background-color: #3F72AF;
+    color: #F9F7F7;
 
-    .content{
+    .content {
         display: flex;
         flex-direction: column;
 
-        .title{
+        .title {
             display: flex;
             justify-content: center;
         }
-        .display-projects{
+
+        .display-projects {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             margin: 5px;
-            
-            .project{
-                &-title{
+
+            .project {
+                &-title {
                     font-size: 24px;
                     margin: 10px auto;
                     text-align: center;
                 }
-                .thumbnail-project{
+
+                .thumbnail-project {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    .img{
+
+                    .img {
                         display: flex;
                         justify-content: center;
                         height: 250px;
                         width: 400px;
-                        border: 2px solid black;
+                        border: 2px solid #F9F7F7;
                         border-radius: 10px;
-                        overflow: hidden;            
-                        img{
+                        overflow: hidden;
+
+                        img {
                             height: 250px;
-                            width: auto;                        
+                            width: auto;
                             object-fit: contain;
                         }
                     }
-                }                
+                }
             }
-            .project-description{
+
+            .project-description {
                 display: flex;
                 flex-direction: column;
                 width: 100%;
                 margin: 30px auto;
-                h4{
+
+                h4 {
                     margin: 15px auto;
                 }
-                li{
-                    list-style-type:none;
+
+                li {
+                    list-style-type: none;
                     margin: 5px 0px;
                 }
-                .language{
+
+                .language {
                     margin: 10px 0px;
                 }
-                .project-button{
+
+                .project-button {
                     margin: 25px 0;
-                    button{
-                        margin: 0px 10px;
+
+                    .frame {
+                        .custom-btn {
+                            width: auto;
+                            height: 40px;
+                            padding: 10px 25px;
+                            border: 2px solid #112D4E;
+                            font-weight: 500;
+                            background: transparent;
+                            cursor: pointer;
+                            transition: all 0.7s ease;
+                            position: relative;
+                            display: inline-block;
+                        }
+
+                        button {
+                            margin: 0px 10px;
+                            outline: none;
+                        }
+
+                        .btn-site {
+                            background: #112D4E;
+                            color: #F9F7F7;
+                            z-index: 1;
+                            border-radius: 5px;
+                        }
+
+                        .btn-site:after {
+                            position: absolute;
+                            content: "";
+                            width: 0;
+                            height: 100%;
+                            top: 0;
+                            right: 0;
+                            z-index: -1;
+                            background: #F9F7F7;
+                            transition: all 0.7s ease;
+                            border-radius: 5px;
+                        }
+
+                        .btn-site:hover {
+                            color: #112D4E;
+                        }
+
+                        .btn-site:hover:after {
+                            left: 0;
+                            width: 100%;
+                        }
+
+                        .btn-site:active {
+                            top: 2px;
+                        }
+
+                        .btn-code {
+                            background: #112D4E;
+                            color: #F9F7F7;
+                            z-index: 1;
+                            border-radius: 5px;
+                        }
+
+                        .btn-code:after {
+                            position: absolute;
+                            content: "";
+                            width: 0;
+                            height: 100%;
+                            top: 0;
+                            left: 0;
+                            direction: rtl;
+                            z-index: -1;
+                            background: #e0e5ec;
+                            transition: all 0.7s ease;
+                            border-radius: 5px;
+                        }
+
+                        .btn-code:hover {
+                            color: #112D4E;
+                        }
+
+                        .btn-code:hover:after {
+                            left: auto;
+                            right: 0;
+                            width: 100%;
+                        }
+
+                        .btn-code:active {
+                            top: 2px;
+                        }
                     }
                 }
             }
         }
-    }   
+    }
 }
 
-#display-projects:nth-child(even){
+#display-projects:nth-child(even) {
     background-color: red;
 }

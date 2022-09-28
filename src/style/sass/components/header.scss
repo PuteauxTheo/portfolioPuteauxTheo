@@ -1,15 +1,73 @@
 #header {
-    background-color: #FDEEDC;
+    background-color: #DBE2EF;
+
     .content {
         display: flex;
         flex-direction: column;
         align-items: center;
 
         .welcome {
-            margin: 50px 15%;            
+            margin: 150px 15% 75px 15%;
+            color: #112D4E;
+            font-size: 36px;
+            .name{
+                color: #112D4E;
+            }
+            .job{
+                font-size: 24px;
+            }
         }
-        .want-more{
-            padding: 25px;
+
+        .read-more {
+            padding-bottom: 150px;
+        }
+        button {
+            outline: none;
+        }
+
+        .btn-read-more {
+            background: #112D4E;
+            color: #112D4E;
+            z-index: 1;
+            border-radius: 5px;
+        }
+
+        .btn-read-more:after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            background: #112D4E;
+            transition: all 0.3s ease;
+        }
+
+        .btn-read-more:hover {
+            color: #F9F7F7;
+        }
+
+        .btn-read-more:hover:after {
+            top: 0;
+            height: 100%;
+        }
+
+        .btn-read-more:active {
+            top: 2px;
+        }
+
+        .custom-btn {
+            width: auto;
+            height: 40px;
+            padding: 10px 25px;
+            border: 2px solid #112D4E;
+            font-weight: 500;
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            display: inline-block;
         }
     }
 }
