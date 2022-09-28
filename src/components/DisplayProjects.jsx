@@ -40,11 +40,11 @@ export default function DisplayProject() {
                                 </div>
 
                                 <div className='project-button'>
-                                    <a href={project.repo}>
-                                        <button>Voir le code</button>
+                                    <a href={project.repo} className='frame'>
+                                        <button className='custom-btn btn-code'><span>Voir le code</span></button>
                                     </a>
-                                    <a href={project.url}>
-                                        <button>Acceder au site</button>
+                                    <a href={project.url} className='frame'>
+                                        <button className='custom-btn btn-site'><span>Acceder au site</span></button>
                                     </a>
                                 </div>
 

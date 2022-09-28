@@ -5,11 +5,12 @@ export default function Header() {
         <div id="header" className="container">
             <div className="content">
                 <h1 className="welcome">Hi, bienvenue sur mon site !<br />
-                    Je suis Theo 😀<br/>
-                    Développeur Front End Junior
+                    Je suis <span className="name">Theo</span> 😀<br/>
+                    <span className="job">Développeur Front End Junior</span>
                 </h1>
-                <span className="want-more">
-                    En savoir plus
+                <span className="read-more">
+                        <button className="custom-btn btn-read-more">En savoir plus</button>
+                
                 </span>
             </div>
         </div>
