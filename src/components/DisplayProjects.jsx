@@ -2,7 +2,6 @@ import { projectsData } from '../mock/data'
 
 export default function DisplayProject() {
 
-
     const joinText = (tab) => {
         const language = []
         tab.forEach(info => {
@@ -40,19 +39,24 @@ export default function DisplayProject() {
                                 </div>
 
                                 <div className='project-button'>
-                                    <a href={project.repo} className='frame'>
+                                    <a rel="noopener noreferrer" href={project.repo} className='frame' target="_blank">
                                         <button className='custom-btn btn-code'><span>Voir le code</span></button>
                                     </a>
-                                    <a href={project.url} className='frame'>
-                                        <button className='custom-btn btn-site'><span>Acceder au site</span></button>
-                                    </a>
+                                    {
+                                        project.url === null ? 
+                                            null 
+                                            :   <a rel="noopener noreferrer" href={project.url} className='frame' target="_blank">
+                                                    <button className='custom-btn btn-site'><span>Acceder au site</span></button>
+                                                </a>
+                                    }
+                                    
                                 </div>
 
                             </span>
 
                         </div>
                     )
-                })
+                }).reverse()
                 }
             </div>
         </div>

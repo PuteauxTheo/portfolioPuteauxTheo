@@ -9,7 +9,10 @@ export default function Header() {
                     <span className="job">Développeur Front End Junior</span>
                 </h1>
                 <span className="read-more">
+                    <a href="#about">
                         <button className="custom-btn btn-read-more">En savoir plus</button>
+                    </a>
+                        
                 
                 </span>
             </div>
