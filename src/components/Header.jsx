@@ -3,7 +3,7 @@ import React from "react"
 export default function Header() {
     return (
         <div id="header" className="container">
-            <div className="content">
+            <div className="header content">
                 <h1 className="welcome">Hi, bienvenue sur mon site !<br />
                     Je suis <span className="name">Theo</span> 😀<br/>
                     <span className="job">Développeur Front End Junior</span>
