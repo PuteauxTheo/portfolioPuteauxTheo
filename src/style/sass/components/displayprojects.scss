@@ -9,6 +9,7 @@
         .title {
             display: flex;
             justify-content: center;
+            font-size: 36px;
         }
 
         .display-projects {
@@ -159,8 +160,4 @@
             }
         }
     }
-}
-
-#display-projects:nth-child(even) {
-    background-color: red;
 }
