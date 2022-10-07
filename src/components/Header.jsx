@@ -10,7 +10,7 @@ export default function Header() {
                 </h1>
                 <span className="read-more">
                     <a href="#about">
-                        <button className="custom-btn btn-read-more">En savoir plus</button>
+                        <button className="custom-btn btn-read-more"><span>En savoir plus</span></button>
                     </a>
                         
                 

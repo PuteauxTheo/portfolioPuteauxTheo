@@ -46,7 +46,7 @@ export default function DisplayProject() {
                                         project.url === null ? 
                                             null 
                                             :   <a rel="noopener noreferrer" href={project.url} className='frame' target="_blank">
-                                                    <button className='custom-btn btn-site'><span>Acceder au site</span></button>
+                                                    <button className='custom-btn btn-site'><span>Accéder au site</span></button>
                                                 </a>
                                     }
                                     
