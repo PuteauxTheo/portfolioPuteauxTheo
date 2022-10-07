@@ -1,6 +1,7 @@
 #display-projects {
     background-color: #3F72AF;
     color: #F9F7F7;
+    padding-bottom: 30px;
 
     .content {
         display: flex;
@@ -10,6 +11,8 @@
             display: flex;
             justify-content: center;
             font-size: 36px;
+            margin: 0;
+            padding: 30px;
         }
 
         .display-projects {
@@ -28,6 +31,7 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    margin-bottom: 25px;
 
                     .img {
                         display: flex;
@@ -55,11 +59,13 @@
 
                 h4 {
                     margin: 15px auto;
+                    font-size: 20px;
                 }
 
                 li {
                     list-style-type: none;
                     margin: 5px 0px;
+                    font-size: 18px;
                 }
 
                 .language {
@@ -67,7 +73,7 @@
                 }
 
                 .project-button {
-                    margin: 25px 0;
+                    margin-top: 25px;
 
                     .frame {
                         .custom-btn {
@@ -81,6 +87,10 @@
                             transition: all 0.7s ease;
                             position: relative;
                             display: inline-block;
+                            span{
+                                font-size: 16px;
+                                font-weight: 600;
+                            }
                         }
 
                         button {
