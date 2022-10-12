@@ -2,7 +2,7 @@ import CirclePercent from "./CirclePercent";
 import { nanoid } from 'nanoid';
 export default function Skills() {
 
-    const mainLanguage = [{ langage: 'HTML / CSS', percent: 80 }, { langage: 'JS', percent: 60 }, { langage: 'ReactJS / Redux', percent: 50 }];
+    const mainLanguage = [{ langage: 'HTML / CSS', percent: 80 }, { langage: 'JavaScript', percent: 60 }, { langage: 'ReactJS / Redux', percent: 50 }];
     const otherLanguage = [{ langage: 'C++', percent: 10 }, { langage: 'Java', percent: 10 }, { langage: 'SQL', percent: 25 }, { langage: 'Bash', percent: 20 }];
 
     return (
@@ -13,7 +13,7 @@ export default function Skills() {
                     {
                         mainLanguage.map((el, index) => {
                             return (<div className="circle-percent" key={`${nanoid}+${index}`}>
-                                <h4>{el.langage}</h4>
+                                <h3>{el.langage}</h3>
                                 <CirclePercent value={el.percent} size={150} />
                             </div>
                             )

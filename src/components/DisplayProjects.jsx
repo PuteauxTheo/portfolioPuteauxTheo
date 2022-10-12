@@ -26,14 +26,17 @@ export default function DisplayProject() {
                                 </div>
                             </div>
                             <span className="project-description">
-                                <h4>{project.mission}</h4>
-                                {
-                                    project.info.map((info, index) => {
-                                        return (
-                                            <li key={info + ' ' + index}>- {info}</li>
-                                        )
-                                    })
-                                }
+                                <h3>{project.mission}</h3>
+                                <ul>
+                                    {
+                                        project.info.map((info, index) => {
+                                            return (
+                                                <li key={info + ' ' + index}>- {info}</li>
+                                            )
+                                        })
+                                    }
+                                </ul>
+                                
                                 <div className='language'>
                                     {joinText(project.language)}
                                 </div>
