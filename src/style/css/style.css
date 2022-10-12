@@ -3,14 +3,43 @@
   max-width: 1200px;
   margin: auto;
 }
+@media screen and (max-width: 940px) {
+  .content {
+    margin: 0px 5px;
+  }
+}
 
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
 }
 
+h2 {
+  font-size: 36px;
+}
+@media screen and (max-width: 940px) {
+  h2 {
+    font-size: 34px;
+  }
+}
+
+h3 {
+  font-size: 20px;
+}
+@media screen and (max-width: 940px) {
+  h3 {
+    font-size: 18px;
+  }
+}
+
 h4 {
   margin: 0;
+  font-size: 18px;
+}
+@media screen and (max-width: 940px) {
+  h4 {
+    font-size: 18px;
+  }
 }
 
 a {
@@ -95,67 +124,79 @@ a {
 #about .aboutme {
   display: flex;
   padding-bottom: 30px;
+  flex-direction: column;
 }
-#about .aboutme .description .title {
+#about .aboutme .title {
   display: flex;
   justify-content: center;
   padding: 30px;
-  font-size: 36px;
   margin: 0;
 }
-#about .aboutme .description .identity {
-  text-align: right;
-  line-height: 30px;
-}
-#about .aboutme .description .presentation {
-  text-align: center;
-}
-#about .aboutme .description .presentation h4 {
-  font-size: 20px;
-}
-#about .aboutme .description .presentation p {
-  font-size: 18px;
-}
-#about .aboutme .description .language-used {
-  text-align: right;
-  margin: 30px;
-}
-#about .aboutme .description .contact-me {
-  text-align: center;
-  display: block;
-  padding-top: 20px;
-}
-#about .aboutme .description .contact-me h4 {
-  font-size: 20px;
-}
-#about .aboutme .description .contact-me-data {
+#about .aboutme .aboutme-information {
   display: flex;
-  justify-content: center;
 }
-#about .aboutme .description .contact-me-data p {
-  margin: 20px 15px;
-  align-self: center;
-  font-size: 18px;
+@media screen and (max-width: 940px) {
+  #about .aboutme .aboutme-information {
+    flex-direction: column;
+  }
 }
-#about .aboutme .description .contact-me-data .logo {
-  display: flex;
-  align-items: center;
-  margin: 20px 15px;
-}
-#about .aboutme .profil-pic {
+#about .aboutme .aboutme-information .profil-pic {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-#about .aboutme .profil-pic .img {
+@media screen and (max-width: 940px) {
+  #about .aboutme .aboutme-information .profil-pic {
+    flex-direction: row;
+  }
+}
+#about .aboutme .aboutme-information .profil-pic .img {
   display: flex;
   overflow: hidden;
   height: 300px;
 }
-#about .aboutme .profil-pic .img img {
+@media screen and (max-width: 940px) {
+  #about .aboutme .aboutme-information .profil-pic .img {
+    height: 150px;
+  }
+}
+#about .aboutme .aboutme-information .profil-pic .img img {
   clip-path: circle(40%);
   height: 100%;
   width: auto;
+}
+#about .aboutme .aboutme-information .description .identity {
+  text-align: right;
+  line-height: 30px;
+}
+#about .aboutme .aboutme-information .description .presentation {
+  text-align: center;
+}
+#about .aboutme .aboutme-information .description .presentation p {
+  font-size: 18px;
+}
+#about .aboutme .aboutme-information .description .language-used {
+  text-align: right;
+  margin: 30px;
+}
+#about .aboutme .aboutme-information .description .contact-me {
+  text-align: center;
+  display: block;
+  padding-top: 20px;
+}
+#about .aboutme .aboutme-information .description .contact-me-data {
+  display: flex;
+  justify-content: center;
+}
+#about .aboutme .aboutme-information .description .contact-me-data p {
+  margin: 20px 15px;
+  align-self: center;
+  font-size: 18px;
+}
+#about .aboutme .aboutme-information .description .contact-me-data .logo {
+  display: flex;
+  align-items: center;
+  margin: 20px 15px;
 }
 
 #skills {
@@ -165,7 +206,6 @@ a {
   display: flex;
   justify-content: center;
   padding: 30px;
-  font-size: 36px;
   margin: 0;
   color: #112D4E;
 }
@@ -173,19 +213,48 @@ a {
   display: flex;
   justify-content: space-evenly;
 }
+@media screen and (max-width: 544px) {
+  #skills .skills-main-langage {
+    flex-direction: column;
+  }
+}
 #skills .skills-main-langage .circle-percent {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#skills .skills-main-langage .circle-percent h4 {
+@media screen and (max-width: 544px) {
+  #skills .skills-main-langage .circle-percent {
+    margin: 0px 35px;
+  }
+  #skills .skills-main-langage .circle-percent:nth-child(odd) {
+    flex-direction: row-reverse;
+    justify-content: start;
+  }
+  #skills .skills-main-langage .circle-percent:nth-child(even) {
+    flex-direction: row;
+    justify-content: end;
+  }
+}
+#skills .skills-main-langage .circle-percent h3 {
   font-size: 24px;
   color: #112D4E;
   margin: 10px 0px;
 }
+@media screen and (max-width: 940px) {
+  #skills .skills-main-langage .circle-percent h3 {
+    margin: 10px 15px;
+  }
+}
 #skills .skills-main-langage .circle-percent .size-circular {
-  height: 125px;
-  width: 125px;
+  height: 100px;
+  width: 100px;
+}
+@media screen and (max-width: 940px) {
+  #skills .skills-main-langage .circle-percent .size-circular {
+    height: 75px;
+    width: 75px;
+  }
 }
 #skills .skills-other-langage {
   display: flex;
@@ -199,13 +268,18 @@ a {
   align-items: center;
 }
 #skills .skills-other-langage .circle-percent h4 {
-  font-size: 20px;
   color: #112D4E;
   margin: 10px 0px;
 }
 #skills .skills-other-langage .circle-percent .size-circular {
   height: 75px;
   width: 75px;
+}
+@media screen and (max-width: 940px) {
+  #skills .skills-other-langage .circle-percent .size-circular {
+    height: 50px;
+    width: 50px;
+  }
 }
 #skills .skills-tool {
   display: flex;
@@ -246,7 +320,6 @@ a {
 #display-projects .content .title {
   display: flex;
   justify-content: center;
-  font-size: 36px;
   margin: 0;
   padding: 30px;
 }
@@ -254,6 +327,11 @@ a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: 5px;
+}
+@media screen and (max-width: 940px) {
+  #display-projects .content .display-projects {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 #display-projects .content .display-projects .project-title {
   font-size: 24px;
@@ -286,11 +364,19 @@ a {
   width: 100%;
   margin: 30px auto;
 }
-#display-projects .content .display-projects .project-description h4 {
-  margin: 15px auto;
-  font-size: 20px;
+@media screen and (max-width: 940px) {
+  #display-projects .content .display-projects .project-description {
+    align-items: center;
+    margin: 0px auto 30px auto;
+  }
 }
-#display-projects .content .display-projects .project-description li {
+#display-projects .content .display-projects .project-description h3 {
+  margin: 15px auto;
+}
+#display-projects .content .display-projects .project-description ul {
+  padding: 0;
+}
+#display-projects .content .display-projects .project-description ul li {
   list-style-type: none;
   margin: 5px 0px;
   font-size: 18px;
