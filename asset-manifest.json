@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolioPuteauxTheo/static/css/main.69370bce.css",
-    "main.js": "/portfolioPuteauxTheo/static/js/main.ae02f82d.js",
+    "main.css": "/portfolioPuteauxTheo/static/css/main.ad55ea6a.css",
+    "main.js": "/portfolioPuteauxTheo/static/js/main.05694d80.js",
     "static/media/me.jpg": "/portfolioPuteauxTheo/static/media/me.0c81f040267061434a99.jpg",
     "static/media/test.jpg": "/portfolioPuteauxTheo/static/media/test.3fdc809be5e17c384ff2.jpg",
     "static/media/booki.jpg": "/portfolioPuteauxTheo/static/media/booki.4af6054e0c67b3bbcb6c.jpg",
@@ -15,11 +15,11 @@
     "static/media/lespetitsplats.jpg": "/portfolioPuteauxTheo/static/media/lespetitsplats.220645917e40e625621c.jpg",
     "static/media/billed.jpg": "/portfolioPuteauxTheo/static/media/billed.51c04535cd777b2ca498.jpg",
     "index.html": "/portfolioPuteauxTheo/index.html",
-    "main.69370bce.css.map": "/portfolioPuteauxTheo/static/css/main.69370bce.css.map",
-    "main.ae02f82d.js.map": "/portfolioPuteauxTheo/static/js/main.ae02f82d.js.map"
+    "main.ad55ea6a.css.map": "/portfolioPuteauxTheo/static/css/main.ad55ea6a.css.map",
+    "main.05694d80.js.map": "/portfolioPuteauxTheo/static/js/main.05694d80.js.map"
   },
   "entrypoints": [
-    "static/css/main.69370bce.css",
-    "static/js/main.ae02f82d.js"
+    "static/css/main.ad55ea6a.css",
+    "static/js/main.05694d80.js"
   ]
 }
